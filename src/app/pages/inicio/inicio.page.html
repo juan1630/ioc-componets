@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Componentes </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <!-- Estas son las listas ordenadas como las de html -->
+
+        <ion-item [routerLink]="c.redirecTo" detail *ngFor="let c of componentes">
+            <ion-icon slot="start" [name]="c.icon"></ion-icon>
+            <ion-label> {{ c.name }} </ion-label>
+        </ion-item>
+    </ion-list>
+
+    <!-- Se muestra lo que va a llevar la pagina -->
+
+    <!-- <ion-button routerLink="/alert"> Alert </ion-button>
+    <ion-button routerLink="/action-sheet"> Action-sheet </ion-button> -->
+
+</ion-content>

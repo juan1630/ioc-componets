@@ -1,0 +1,16 @@
+<app-header [titulo]="titulo || 'alert page'"> </app-header>
+
+<ion-content>
+
+    <h1> Alert pages </h1>
+
+    <ion-button color="primary" expand="full" (click)="presentAlert()">
+        Mostart alerta
+    </ion-button>
+
+
+    <ion-button color="secondary" expand="full" (click)="presentAlertPrompt()">
+        Mostart input
+    </ion-button>
+
+</ion-content>
