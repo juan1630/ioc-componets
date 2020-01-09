@@ -24,6 +24,14 @@ const routes: Routes = [
     path: 'cards',
     loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
   },
+  {
+    path: 'check',
+    loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)
+  },
+  {
+    path: 'date-time',
+    loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
+  },
 
 ];
 
