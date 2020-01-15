@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Componentes } from '../../interfaces/interfaces';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-inicio',
@@ -7,82 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  componentes: Componentes [] = [
-    {
-      icon: 'american-football',
-      name: 'Action Sheet',
-      redirecTo: '/action-sheet'
-    },
-    {
-      icon: 'appstore',
-      name: 'Alert',
-      redirecTo: '/alert'
-    },
-    {
-      icon: 'beaker',
-      name: 'Avatar',
-      redirecTo: '/avatar'
-    },
-    {
-      icon: 'radio-button-on',
-      name: 'Botones y router',
-      redirecTo: '/botones'
-    },
-    {
-      icon: 'card',
-      name: 'Cards',
-      redirecTo: '/cards'
-    },
-    {
-      icon: 'checkmark-circle-outline',
-      name: 'Checkbox',
-      redirecTo: '/check'
-    },
-    {
-      icon: 'calendar',
-      name: 'DateTime',
-      redirecTo: '/date-time'
-    },
-    {
-      icon: 'car',
-      name: 'Fabs',
-      redirecTo: '/fab'
-    },
-    {
-      icon: 'grid',
-      name: 'Grid-row',
-      redirecTo: '/grid'
-    },
-    {
-      icon: 'infinite',
-      name: 'Infinite Scroll',
-      redirecTo: '/infinite-scroll'
-    },
-    {
-      icon: 'hammer',
-      name: 'Input - Forms',
-      redirecTo: '/input'
-    },
-    {
-      icon: 'list',
-      name: 'Listas - Sliding',
-      redirecTo: '/list'
-    }
-  ];
+  componentes: Observable<Componentes[]>;
 
-  constructor() { }
+  constructor( private menuCtl: MenuController, private dataService: DataService   ) { }
 
   ngOnInit() {
+
+    this.componentes =  this.dataService.getMenuOpts();
+  }
+
+  toggleMenu() {
+    this.menuCtl.toggle();
+
   }
 
 }
 
-
-interface Componentes {
-
-  icon: string;
-  name: string;
-  redirecTo: string;
-
-
-}

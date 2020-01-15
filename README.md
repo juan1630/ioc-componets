@@ -9,8 +9,12 @@
 - Avatar
 - Checkbox
 - Date time
-- ion list
-- ion fab, un boton flotante 
-- ion grid
-- ion infinitie scroll
+- list
+- fab, un boton flotante 
+- grid
+- infinitie scroll
 - input 
+- list slidding
+- list reorder 
+- loading
+- Menu

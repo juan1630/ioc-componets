@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PagesPageRoutingModule } from './pages-routing.module';
+import { LoadingPageRoutingModule } from './loading-routing.module';
 
-import { PagesPage } from './pages.page';
-import { ComponentsModule } from '../components/components.module';
+import { LoadingPage } from './loading.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PagesPageRoutingModule,
+    LoadingPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [PagesPage]
+  declarations: [LoadingPage]
 })
-export class PagesPageModule {}
+export class LoadingPageModule {}
