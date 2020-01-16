@@ -18,3 +18,6 @@
 - list reorder 
 - loading
 - Menu
+- Modal 
+- PopOver
+- Progress bar

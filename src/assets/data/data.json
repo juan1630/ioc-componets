@@ -72,5 +72,20 @@
         "icon": "phone-portrait",
         "name": "Modal",
         "redirectTo": "/modal"
+    },
+    {
+        "icon": "tablet-portrait",
+        "name": "Popover",
+        "redirectTo": "/popover-page"
+    },
+    {
+        "icon": "code-working",
+        "name": "Progress bar",
+        "redirectTo": "/progress-bar"
+    },
+    {
+        "icon": "arrow-round-down",
+        "name": "Refresher",
+        "redirectTo": "/refresher"
     }
 ]
