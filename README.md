@@ -21,3 +21,6 @@
 - Modal 
 - PopOver
 - Progress bar
+- Refresher
+- Animated css
+- Search bar
