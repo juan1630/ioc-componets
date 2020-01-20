@@ -83,8 +83,14 @@ const routes: Routes = [
   {
     path: 'searchbar',
     loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
+  },
+  {
+    path: 'segmnet',
+    loadChildren: () => import('./pages/segmnet/segmnet.module').then( m => m.SegmnetPageModule)
+  }, {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
   }
-
 
 ];
 

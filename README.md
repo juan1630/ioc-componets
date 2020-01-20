@@ -23,4 +23,11 @@
 - Progress bar
 - Refresher
 - Animated css
-- Search bar
+- Search bar - modulo de pipes
+- Segment
+- Skeleton 
+- Pipes
+- Slides (Agregamos animaciones con [ngClass])
+
+
+### Swiper
